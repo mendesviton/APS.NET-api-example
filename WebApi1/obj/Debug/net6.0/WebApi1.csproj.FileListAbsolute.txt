@@ -27,3 +27,9 @@ C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\WebA
 C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\WebApi1\obj\Debug\net6.0\ref\WebApi1.dll
 C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\WebApi1\bin\Debug\net6.0\Data.dll
 C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\WebApi1\bin\Debug\net6.0\Data.pdb
+C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\WebApi1\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\WebApi1\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\WebApi1\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\WebApi1\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\WebApi1\bin\Debug\net6.0\Npgsql.dll
+C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\WebApi1\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

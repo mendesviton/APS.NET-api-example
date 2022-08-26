@@ -10,32 +10,32 @@ namespace Data.repository
     public class BaseRepository<T> : IRepository<T>  where T : Basemodel
     {
         List<T> entityList;
-        public BaseRepository()
+        public  BaseRepository()
         {
             entityList = new List<T>();
         }
-        public string Create(T model)
+        public virtual string Create(T model)
         {
             return "Criado";
         }
 
-        public string Delete(int id)
+        public virtual string Delete(int id)
         {
             return "deletado";  
         }
 
-        public List<T> GetAll()
+        public virtual List<T> GetAll()
         {
             return entityList;
         }
 
-        public T GetById(int id)
+        public virtual T GetById(int id)
         {
             T entity = null;
             return entity;
         }
 
-        public string Update(T model)
+        public virtual  string Update(T model)
         {
             return "alterado";
         }

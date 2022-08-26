@@ -10,3 +10,5 @@ C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\Data
 C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\Data\obj\Debug\net6.0\refint\Data.dll
 C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\Data\obj\Debug\net6.0\Data.pdb
 C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\Data\obj\Debug\net6.0\ref\Data.dll
+C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\Data\bin\Debug\net6.0\Data.runtimeconfig.json
+C:\Users\Vitor.Santos\Desktop\CSHARP\primeira_solucao\Warren\Aula 2\WebApi1\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache

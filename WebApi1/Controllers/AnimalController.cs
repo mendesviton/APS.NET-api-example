@@ -11,13 +11,13 @@ namespace WebApi1.Controllers
     {
         AnimalModel animal = new AnimalModel
         {
-            Id = 1,
-            Species = "Canino",
-            Name = "Haik",
-            Peso = 20.5f
+            
         };
         [HttpGet]
-        public AnimalModel Get() { return animal; }
+        public List<AnimalModel> Get() {
+            AnimalRepository animalRepository = new AnimalRepository();
+            return  animalRepository.GetAll();
+        }
 
         [HttpPost]
         public string Post(AnimalModel model)
