@@ -50,8 +50,15 @@ namespace Data.repository
 
         public virtual T GetById(int id)
         {
-            T entity = null;
-            return entity;
+            T model = null;
+            //esse bloco vai fazer com que feche as conexoes
+            using (WebApiContext webApiContext = new WebApiContext())
+            {
+
+                model = webApiContext.Set<T>().Find(id);
+            }
+
+            return model;
         }
 
         public virtual  string Update(T model)
