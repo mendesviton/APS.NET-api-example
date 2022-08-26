@@ -1,4 +1,5 @@
-﻿using Data.model;
+﻿using Data.ContextWebApi;
+using Data.model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,20 +15,38 @@ namespace Data.repository
         {
             entityList = new List<T>();
         }
+
+        public virtual List<T> GetAll()
+        {
+            List<T> listAnimal = new List<T>();
+            //esse bloco vai fazer com que feche as conexoes
+            using (WebApiContext webApiContext = new WebApiContext())
+            {
+
+                listAnimal = webApiContext.Set<T>().ToList();
+            }
+
+            return listAnimal;
+        }
         public virtual string Create(T model)
         {
-            return "Criado";
+            using (WebApiContext webApiContext = new WebApiContext())
+            {
+                webApiContext.Set<T>().Add(model);
+
+
+                webApiContext.SaveChanges();
+            }
+            return "criado";
         }
+      
 
         public virtual string Delete(int id)
         {
             return "deletado";  
         }
 
-        public virtual List<T> GetAll()
-        {
-            return entityList;
-        }
+       
 
         public virtual T GetById(int id)
         {
