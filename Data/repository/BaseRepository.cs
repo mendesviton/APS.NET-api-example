@@ -43,7 +43,14 @@ namespace Data.repository
 
         public virtual string Delete(int id)
         {
-            return "deletado";  
+            using (WebApiContext webApiContext = new WebApiContext())
+            {
+                webApiContext.Entry<T>(this.GetById(id)).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
+
+
+                webApiContext.SaveChanges();
+            }
+            return "updated";
         }
 
        
@@ -63,7 +70,14 @@ namespace Data.repository
 
         public virtual  string Update(T model)
         {
-            return "alterado";
+            using (WebApiContext webApiContext = new WebApiContext())
+            {
+                webApiContext.Entry<T>(model).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+
+
+                webApiContext.SaveChanges();
+            }
+            return "updated";
         }
     }
     
