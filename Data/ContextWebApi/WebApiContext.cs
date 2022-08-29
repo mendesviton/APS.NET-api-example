@@ -13,6 +13,8 @@ namespace Data.ContextWebApi
     {
         #region Props
         public DbSet<AnimalModel> Animal { get; set; }
+        public DbSet<UsuarioModel> Usuario { get; set; }
+
         public DbSet<PlantaModel> Planta { get; set; }
 
         #endregion
