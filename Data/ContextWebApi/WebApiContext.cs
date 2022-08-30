@@ -21,7 +21,7 @@ namespace Data.ContextWebApi
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;" +
+            optionsBuilder.UseNpgsql("Host=192.168.0.104;" +
                 "Port=5433;" +
                 "Database=postgres;" +
                 "search path=geral;" +
