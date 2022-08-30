@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Data.Migrations
 {
     [DbContext(typeof(WebApiContext))]
-    [Migration("20220829172933_createTableUsuario")]
-    partial class createTableUsuario
+    [Migration("20220830115219_createTableUser")]
+    partial class createTableUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -85,6 +85,10 @@ namespace Data.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("password")
                         .IsRequired()
                         .HasColumnType("text");
 

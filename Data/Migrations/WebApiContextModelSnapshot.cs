@@ -86,6 +86,10 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.ToTable("Usuario");

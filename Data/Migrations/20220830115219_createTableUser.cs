@@ -5,7 +5,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Data.Migrations
 {
-    public partial class createTableUsuario : Migration
+    public partial class createTableUser : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,7 +16,8 @@ namespace Data.Migrations
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     email = table.Column<string>(type: "text", nullable: false),
-                    name = table.Column<string>(type: "text", nullable: false)
+                    name = table.Column<string>(type: "text", nullable: false),
+                    password = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
