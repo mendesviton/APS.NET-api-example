@@ -9,5 +9,6 @@ namespace Data.repository
 {
     public class PlantaRepository : BaseRepository<PlantaModel>
     {
+       
     }
 }
