@@ -2,6 +2,7 @@
 using Data.repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebApi1.DTO;
 
 namespace WebApi1.Controllers
 {
@@ -12,6 +13,10 @@ namespace WebApi1.Controllers
         public UsuarioController() : base(new UsuarioRepository())
         {
 
+            
+
         }
+
+       
     }
 }
